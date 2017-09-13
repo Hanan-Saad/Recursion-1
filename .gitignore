@@ -1,22 +1,15 @@
-# Compiled class file
-*.class
+public int bunnyEars2(int bunnies) {
+  
+ if(bunnies==0) 
+ return 0;
 
-# Log file
-*.log
+else if(bunnies%2==0)
 
-# BlueJ files
-*.ctxt
+return 3 + bunnyEars2(bunnies-1);
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+else
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+return 2+bunnyEars2(bunnies-1);
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+ 
+}
